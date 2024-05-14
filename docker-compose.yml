@@ -1,0 +1,8 @@
+
+services:
+
+  jenkins:
+    container_name: Jenkins
+    image: jenkins/jenkins
+    ports:
+      - '7777:8080'
