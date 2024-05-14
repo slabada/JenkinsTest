@@ -8,12 +8,12 @@ pipeline {
     stages{
         stage('Compile'){
             steps{
-                sh "mvp compile"
+                sh "mvn compile"
             }
         }
         stage('Test'){
             steps{
-                sh "mvp test"
+                sh "mvn test"
             }
         }
     }
