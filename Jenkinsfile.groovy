@@ -1,10 +1,11 @@
 pipeline {
-
     agent any
 
     stages{
-        stage("Build"){
-            echo "Builddddddd"
+        stage('Build'){
+            steps{
+                echo 'SLABADA'
+            }
         }
     }
 }
