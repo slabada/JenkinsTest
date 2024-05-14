@@ -19,4 +19,10 @@ class CalculationTest {
         var r = calculation.sum(5,5);
         assertEquals(10, r);
     }
+
+    @Test
+    void divide() {
+        var r = calculation.divide(5,5);
+        assertEquals(1, r);
+    }
 }
