@@ -1,10 +1,19 @@
 pipeline {
     agent any
 
+    tools{
+        maven "M3"
+    }
+
     stages{
-        stage('Build'){
+        stage('Compile'){
             steps{
-                echo 'SLABADA'
+                sh "mvp compile"
+            }
+        }
+        stage('Test'){
+            steps{
+                sh "mvp test"
             }
         }
     }
